@@ -5,5 +5,10 @@
     placeholder="Type the city name"
     #input
   />
-  <input class="search-button" type="button" value="SEARCH" />
+  <input
+    class="search-button"
+    type="button"
+    value="SEARCH"
+    (click)="onSearchCity(input.value)"
+  />
 </div>

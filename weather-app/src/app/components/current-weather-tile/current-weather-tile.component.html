@@ -1,8 +1,12 @@
 <div class="city-card">
   <div class="location">
-    <div class="city">Budapest</div>
-    <div class="state">HU</div>
+    <div class="city">{{ cityData.city }}</div>
+    <div class="state">{{ cityData.country }}</div>
   </div>
-  <div class="temperature">25 &#8451;</div>
-  <img src="" alt="weather icon" class="weather-icon" />
+  <div class="temperature">{{ cityData.temp }} &#8451;</div>
+  <img
+    src="http://openweathermap.org/img/wn/{{ cityData.icon }}@2x.png"
+    alt="weather icon"
+    class="weather-icon"
+  />
 </div>

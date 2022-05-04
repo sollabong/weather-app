@@ -1,4 +1,4 @@
-export class IWeatherData {
+export class WeatherData {
   city: string;
   country: string;
   temp: number;

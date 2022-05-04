@@ -14,9 +14,12 @@
   .city {
     font-size: 2rem;
     font-weight: 700;
+    width: 200px;
   }
   .temperature {
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 900;
+    width: 150px;
+    text-align: right;
   }
 }
