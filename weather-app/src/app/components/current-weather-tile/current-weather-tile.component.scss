@@ -1,0 +1,22 @@
+.city-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 16px;
+  box-shadow: 2px 2px 4px 1px #8888883b;
+  padding: 16px;
+  color: rgb(7, 67, 82);
+  margin-bottom: 32px;
+  .city {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .temperature {
+    font-size: 4rem;
+    font-weight: 900;
+  }
+}
