@@ -17,5 +17,10 @@
     background-color: rgb(15, 171, 210);
     border: none;
     border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .search-button:hover {
+    background-color: rgb(15, 210, 165);
   }
 }
