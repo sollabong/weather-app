@@ -17,8 +17,8 @@ export class AppComponent {
 
   ngOnInit() {
     this.appservice.getDefaultCitiesData(this.cityIds).subscribe({
-      next: (allWeatherData) => {
-        this.cityDataArray = allWeatherData;
+      next: (allCityData) => {
+        this.cityDataArray = allCityData;
       },
       error: (err: any) => {
         console.log(err);
