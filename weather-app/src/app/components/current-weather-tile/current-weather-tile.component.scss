@@ -11,10 +11,12 @@
   padding: 16px;
   color: rgb(7, 67, 82);
   margin-bottom: 32px;
-  .city {
-    font-size: 2rem;
-    font-weight: 700;
+  .location {
     width: 200px;
+    .city {
+      font-size: 2rem;
+      font-weight: 700;
+    }
   }
   .temperature {
     font-size: 3.5rem;

@@ -4,6 +4,7 @@ import { environment } from 'src/environments/environment';
 import { Observable } from 'rxjs';
 import { WeatherData } from '../interfaces-classes/classes';
 import { map } from 'rxjs/operators';
+import { getCode, getName } from 'country-list';
 
 @Injectable({
   providedIn: 'root',
@@ -21,7 +22,7 @@ export class AppService {
           let cityData: WeatherData;
           return (cityData = {
             city: weatherData.name,
-            country: weatherData.sys.country,
+            country: getName(weatherData.sys.country),
             temp: Math.round(weatherData.main.temp),
             icon: weatherData.weather[0].icon,
             id: weatherData.id,
@@ -42,7 +43,7 @@ export class AppService {
             let cityData: WeatherData;
             cityData = {
               city: weatherData.name,
-              country: weatherData.sys.country,
+              country: getName(weatherData.sys.country),
               temp: Math.round(weatherData.main.temp),
               icon: weatherData.weather[0].icon,
               id: weatherData.id,

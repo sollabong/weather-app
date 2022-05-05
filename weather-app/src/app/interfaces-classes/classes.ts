@@ -1,6 +1,6 @@
 export class WeatherData {
   city: string;
-  country: string;
+  country: string | undefined;
   temp: number;
   icon: string;
   id: number;
