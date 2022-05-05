@@ -18,16 +18,7 @@ export class AppComponent {
   ngOnInit() {
     this.appservice.getDefaultCitiesData(this.cityIds).subscribe({
       next: (allWeatherData) => {
-        for (let i: number = 0; i < allWeatherData.cnt; i++) {
-          let cityData: WeatherData = {
-            city: allWeatherData.list[i].name,
-            country: allWeatherData.list[i].sys.country,
-            temp: Math.round(allWeatherData.list[i].main.temp),
-            icon: allWeatherData.list[i].weather[0].icon,
-            id: allWeatherData.list[i].id,
-          };
-          this.cityDataArray.push(cityData);
-        }
+        this.cityDataArray = allWeatherData;
       },
       error: (err: any) => {
         console.log(err);
@@ -37,15 +28,11 @@ export class AppComponent {
 
   getSearchedCityData(city: string) {
     this.appservice.getCityData(city).subscribe({
-      next: (weatherData) => {
-        let cityData: WeatherData = {
-          city: weatherData.name,
-          country: weatherData.sys.country,
-          temp: Math.round(weatherData.main.temp),
-          icon: weatherData.weather[0].icon,
-          id: weatherData.id,
-        };
+      next: (cityData) => {
         this.cityDataArray = [cityData];
+      },
+      error: (err: any) => {
+        console.log(err);
       },
     });
   }
