@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { WeatherData } from 'src/app/interfaces-classes/classes';
+import { WeatherData } from 'src/app/interfaces-classes/interfaces';
 
 @Component({
   selector: 'app-current-weather-tile',
