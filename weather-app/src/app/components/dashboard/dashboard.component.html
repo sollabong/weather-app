@@ -1,0 +1,6 @@
+<app-search-bar (onSearch)="getSearchedCityData($event)"></app-search-bar>
+
+<app-current-weather-tile
+  *ngFor="let cityData of cityDataArray"
+  [cityData]="cityData"
+></app-current-weather-tile>

@@ -1,0 +1,10 @@
+<div class="city-card">
+  <div class="city">{{ cityData.city }}</div>
+  <div class="state">{{ cityData.country }}</div>
+  <div class="forecast-cards">
+    <app-forecast-card
+      *ngFor="let forecast of forecastList"
+      [forecast]="forecast"
+    ></app-forecast-card>
+  </div>
+</div>

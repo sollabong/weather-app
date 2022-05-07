@@ -1,0 +1,10 @@
+<div class="forecast-card">
+  <div class="date">{{ forecast.dt * 1000 | date: "yyyy. MM. dd." }}</div>
+  <img
+    src="http://openweathermap.org/img/wn/{{ forecast.icon }}@2x.png"
+    alt="kép"
+    class="icon"
+  />
+  <div class="temp">{{ forecast.temp | number: "1.0-0" }} °C</div>
+  <div class="description">{{ forecast.description }}</div>
+</div>

@@ -1,0 +1,22 @@
+.city-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 16px;
+  box-shadow: 2px 2px 4px 1px #8888883b;
+  padding: 16px;
+  color: rgb(7, 67, 82);
+  .city {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .forecast-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+  }
+}
